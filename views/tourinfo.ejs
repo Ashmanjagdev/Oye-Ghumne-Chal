@@ -1,0 +1,289 @@
+<%- include("header") -%>
+<br>
+<div class="pd-wrap">
+    <div class="container">
+          <div class="row center123">
+            <div class="col-md-6 ">
+
+              <div>
+                <div class="carousel caro1">
+                  <ul class="slides">
+
+
+                    <input type="radio" name="radio-buttons" id="img-1" checked />
+                    <li class="slide-container">
+                      <div class="slide-image">
+                        <img src="/uploads/<%=images1%>" alt="glitch">
+                      </div>
+                      <div class="carousel-controls">
+                        <label for="img-3" class="prev-slide">
+                          <span>&lsaquo;</span>
+                        </label>
+                        <label for="img-2" class="next-slide">
+                          <span>&rsaquo;</span>
+                        </label>
+                      </div>
+                    </li>
+
+
+                    <input type="radio" name="radio-buttons" id="img-2" />
+                    <li class="slide-container">
+                      <div class="slide-image">
+                        <img src="/uploads/<%=images2%>">
+                      </div>
+                      <div class="carousel-controls">
+                        <label for="img-1" class="prev-slide">
+                          <span>&lsaquo;</span>
+                        </label>
+                        <label for="img-3" class="next-slide">
+                          <span>&rsaquo;</span>
+                        </label>
+                      </div>
+                    </li>
+
+
+                    <input type="radio" name="radio-buttons" id="img-3" />
+                    <li class="slide-container" >
+                      <div class="slide-image">
+                        <img src="/uploads/<%=images3%>">
+                      </div>
+                      <div class="carousel-controls">
+                        <label for="img-2" class="prev-slide">
+                          <span>&lsaquo;</span>
+                        </label>
+                        <label for="img-4" class="next-slide">
+                          <span>&rsaquo;</span>
+                        </label>
+                      </div>
+                    </li>
+                    <input type="radio" name="radio-buttons" id="img-4" />
+                    <li class="slide-container">
+                      <div class="slide-image">
+                        <img src="/uploads/<%=images4%>">
+                      </div>
+                      <div class="carousel-controls">
+                        <label for="img-3" class="prev-slide">
+                          <span>&lsaquo;</span>
+                        </label>
+                        <label for="img-5" class="next-slide">
+                          <span>&rsaquo;</span>
+                        </label>
+                      </div>
+                    </li>
+                    <input type="radio" name="radio-buttons" id="img-5" />
+                    <li class="slide-container">
+                      <div class="slide-image">
+                        <img src="/uploads/<%=images5%>">
+                      </div>
+                      <div class="carousel-controls">
+                        <label for="img-4" class="prev-slide">
+                          <span>&lsaquo;</span>
+                        </label>
+                        <label for="img-1" class="next-slide">
+                          <span>&rsaquo;</span>
+                        </label>
+                      </div>
+                    </li>
+
+
+                    <div class="carousel-dots">
+                      <label for="img-1" class="carousel-dot" id="img-dot-1"></label>
+                      <label for="img-2" class="carousel-dot" id="img-dot-2"></label>
+                      <label for="img-3" class="carousel-dot" id="img-dot-3"></label>
+                      <label for="img-4" class="carousel-dot" id="img-dot-4"></label>
+                      <label for="img-5" class="carousel-dot" id="img-dot-5"></label>
+                    </div>
+                  </ul>
+                </div>
+              </div>
+
+
+            </div>
+            <div class="col-md-6 " >
+              <div class="product-dtl" style="margin-left:50px; margin-top:10px;">
+                <div class="product-info">
+                  <div class="product-name" style=" font-family: 'Karla';font-size:26px;"><span class="tripname"><b><%=tripname%></b></span></div>
+                  <div class="reviews-counter">
+                <div class="rate">
+                    <input type="radio" id="star5" name="rate" value="5" checked />
+                    <label for="star5" title="text">5 stars</label>
+                    <input type="radio" id="star4" name="rate" value="4" checked />
+                    <label for="star4" title="text">4 stars</label>
+                    <input type="radio" id="star3" name="rate" value="3" checked />
+                    <label for="star3" title="text">3 stars</label>
+                    <input type="radio" id="star2" name="rate" value="2" />
+                    <label for="star2" title="text">2 stars</label>
+                    <input type="radio" id="star1" name="rate" value="1" />
+                    <label for="star1" title="text">1 star</label>
+                  </div>
+                <span>3 Reviews</span>
+              </div>
+
+                  <div class="product-price-discount"><span><i class="fa-solid fa-indian-rupee-sign"></i><%=price%></span><span class="line-through"><i class="fa-solid fa-indian-rupee-sign"></i><%= cutprice %></span> -/ Person</div>
+                </div>
+                <div class="">
+
+
+                <div class="details-images1">
+                  <img class="images-position ip1" src="/css/Accomodation.png" alt="acco">
+                  <p>Accomodation</p>
+                </div>
+                <div class="details-images2 ">
+                  <img class="images-position ip1" src="/css/Activities.png" alt="acco">
+                  <p>Activities</p>
+                </div>
+                <div class="details-images3">
+                  <img class="images-position1 ip1" src="/css/Guide.png" alt="acco">
+                  <p>Guidance</p>
+                </div>
+                <div class="details-images1">
+                  <img class="images-position ip1" src="/css/Meals.png" alt="acco">
+                  <p>Meals</p>
+                </div>
+                <div class="details-images2">
+                  <img class="images-position ip1" src="/css/pick.png" alt="acco">
+                  <p><%=days%></p>
+                </div>
+                <div class="details-images4">
+                  <img class="images-position1 ip1" src="/css/Transport.png" alt="acco">
+                  <p  ><%=location%></p>
+                </div>
+                </div>
+
+                <br>
+                   <form  action="/booknow" method="post" class="booknowbutton" style="float:left;margin-right:20px;" role="search" >
+                     <button type="submit" class="btn btn-warning hovr1" style="background-color:orange;border:none;"><b>Book Now</b></button>
+                   </form>
+                   <a href="<%=whatsapp%>" class="text-decoration-none booknowbutton">
+
+                  <button type="button" class="btn btn-warning hovr1" style="background-color:#7fda56;border:none;" ><b>Whatsapp</b></button>
+
+                  </a>
+                  <br>
+              </div>
+
+
+            </div>
+          </div>
+          <br>
+          <div class="product-info-tabs">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item a1">
+              <a class="nav-link active " id="description-tab1" data-toggle="tab" href="#overview" role="tab" aria-controls="description" aria-selected="true">Overview</a>
+            </li>
+            <li class="nav-item a1">
+              <a class="nav-link " id="description-tab2" data-toggle="tab" href="#itinerary1" role="tab" aria-controls="review" aria-selected="false">Short itinerary</a>
+            </li>
+            <li class="nav-item a1">
+              <a class="nav-link " id="description-tab3" data-toggle="tab" href="#itinerary2" role="tab" aria-controls="review" aria-selected="false">Detailed itinerary</a>
+            </li>
+            <li class="nav-item a1">
+              <a class="nav-link " id="description-tab3" data-toggle="tab" href="#inclusions" role="tab" aria-controls="review" aria-selected="false">Inclusions</a>
+            </li>
+            <li class="nav-item a1">
+              <a class="nav-link " id="description-tab3" data-toggle="tab" href="#toc" role="tab" aria-controls="review" aria-selected="false">Things to Carry</a>
+            </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="overview" role="tabpanel" aria-labelledby="description-tab1">
+              <br>
+              <%=overview%>
+            </div>
+            <div class="tab-pane fade show " id="itinerary1" role="tabpanel" aria-labelledby="description-tab2">
+<br>
+            <span style="display:none<%=itinerary1%>;">  <b><span class="colour1">Day 1</span></b> - <%=itinerary1%><br> </span>
+              <span style="display:none<%=itinerary2%>;">  <b><span class="colour1">Day 2</span></b> - <%=itinerary2%><br> </span>
+              <span style="display:none<%=itinerary3%>;">  <b><span class="colour1">Day 3</span></b> - <%=itinerary3%><br> </span>
+              <span style="display:none<%=itinerary4%>;">  <b><span class="colour1">Day 4</span></b> - <%=itinerary4%><br> </span>
+              <span style="display:none<%=itinerary5%>;">  <b><span class="colour1">Day 5</span></b> - <%=itinerary5%><br> </span>
+              <span style="display:none<%=itinerary6%>;">  <b><span class="colour1">Day 6</span></b> - <%=itinerary6%><br> </span>
+
+            </div>
+
+            <div class="tab-pane fade show " id="itinerary2" role="tabpanel" aria-labelledby="description-tab3">
+              <br>
+              <span style="display:none<%=detailitinerarydesc1%>">
+              <i class="fa-solid fa-calendar-days calendar"></i>
+              <b>
+                <span class="colour1"><%=detailitineraryhead1%>(Day-1)</span>
+              </b>
+              <br>
+              <br>
+              <%=detailitinerarydesc1%>
+              </span>
+              <br>
+              <br>
+              <span style="display:none<%=detailitinerarydesc2%>">
+              <i class="fa-solid fa-calendar-days calendar"></i>
+              <b>
+                <span class="colour1"><%=detailitineraryhead2%>(Day-2)</span>
+              </b> <br>
+              <br>
+              <%=detailitinerarydesc2%>
+              </span>
+              <br>
+              <br>
+              <span style="display:none<%=detailitinerarydesc3%>">
+              <i class="fa-solid fa-calendar-days calendar"></i>
+              <b>
+                <span class="colour1"><%=detailitineraryhead3%>(Day-3)</span>
+              </b> <br>
+              <br>
+              <%=detailitinerarydesc3%>
+              </span>
+              <br>
+              <br>
+              <span style="display:none<%=detailitinerarydesc4%>">
+              <i class="fa-solid fa-calendar-days calendar"></i>
+              <b>
+                <span class="colour1"><%=detailitineraryhead4%>(Day-4)</span>
+              </b> <br>
+              <br>
+              <%=detailitinerarydesc4%>
+              </span>
+            </div>
+
+            <div class="tab-pane fade show " id="inclusions" role="tabpanel" aria-labelledby="description-tab2">
+<br>
+<div style="float:left;margin-right:150px;">
+
+              <i style="display:none<%=inclusion1%>" class="fa-solid fa-check"></i> <%=inclusion1%><br>
+              <i style="display:none<%=inclusion2%>" class="fa-solid fa-check"></i> <%=inclusion2%><br>
+              <i style="display:none<%=inclusion3%>" class="fa-solid fa-check"></i> <%=inclusion3%><br>
+              <i style="display:none<%=inclusion4%>" class="fa-solid fa-check"></i> <%=inclusion4%><br>
+              <i style="display:none<%=inclusion5%>" class="fa-solid fa-check"></i> <%=inclusion5%><br>
+              <i style="display:none<%=inclusion6%>" class="fa-solid fa-check"></i> <%=inclusion6%><br>
+              <i style="display:none<%=inclusion7%>" class="fa-solid fa-check"></i> <%=inclusion7%>
+
+              </div>
+              <div >
+              <span style="display:none<%=exclusion1%>;">
+              <i style="display:none<%=exclusion1%>;" class="fa-solid fa-multiply"></i> <%=exclusion1%><br>
+              <i style="display:none<%=exclusion2%>;" class="fa-solid fa-multiply"></i> <%=exclusion2%><br>
+              <i style="display:none<%=exclusion3%>;" class="fa-solid fa-multiply"></i> <%=exclusion3%><br>
+              <i style="display:none<%=exclusion4%>;" class="fa-solid fa-multiply"></i> <%=exclusion4%><br>
+              <i style="display:none<%=exclusion5%>;" class="fa-solid fa-multiply"></i> <%=exclusion5%><br>
+</span>
+</div>
+            </div>
+            <div class="tab-pane fade show " id="toc" role="tabpanel" aria-labelledby="description-tab2">
+<br>
+              <i style="display:none<%=toc1%>" class="fa-solid fa-star"></i> <%=toc1%><br>
+              <i style="display:none<%=toc2%>" class="fa-solid fa-star"></i> <%=toc2%><br>
+              <i style="display:none<%=toc3%>" class="fa-solid fa-star"></i> <%=toc3%><br>
+              <i style="display:none<%=toc4%>" class="fa-solid fa-star"></i> <%=toc4%><br>
+              <i style="display:none<%=toc5%>" class="fa-solid fa-star"></i> <%=toc5%><br>
+              <i style="display:none<%=toc6%>" class="fa-solid fa-star"></i> <%=toc6%><br>
+              <i style="display:none<%=toc7%>" class="fa-solid fa-star"></i> <%=toc7%>
+
+            </div>
+
+
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+<%- include("footer") -%>

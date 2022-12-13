@@ -1,0 +1,224 @@
+<%- include("header") -%>
+<div class="signform">
+<div class=" cont">
+    <div class="title">Post Trip</div>
+    <div class=" Sell-items content">
+      <form action="/sellatcards2" enctype="multipart/form-data" method="post">
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">Trip Name</span>
+            <input name="tripname" type="text" placeholder="Enter Trip name" required>
+          </div>
+          <div class="input-box" >
+            <span class="details">Price per person of trip</span>
+            <input name="price" type="text" placeholder="price per person" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Location</span>
+            <input name="location" type="text" placeholder="Enter Location" required>
+          </div>
+
+          <div class="input-box">
+            <span class="details">trip days and nights</span>
+            <input name="days" type="text" placeholder="Enter number of trip days and nights" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Overview</span>
+            <input name="overview" type="text" placeholder="Enter Overview" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Day1 Itenerary</span>
+            <input name="day1" type="text" placeholder="Enter Day1 Itenerary" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Day2 Itenerary</span>
+            <input name="day2" type="text" placeholder="Enter Day2 Itenerary" >
+          </div>
+          <div class="input-box">
+            <span class="details">Day3 Itenerary</span>
+            <input name="day3" type="text" placeholder="Enter Day3 Itenerary" >
+          </div>
+          <div class="input-box">
+            <span class="details">Day4 Itenerary</span>
+            <input name="day4" type="text" placeholder="Enter Day4 Itenerary" >
+          </div>
+          <div class="input-box">
+            <span class="details">Day5 Itenerary</span>
+            <input name="day5" type="text" placeholder="Enter Day5 Itenerary" >
+          </div>
+          <div class="input-box">
+            <span class="details">Day6 Itenerary</span>
+            <input name="day6" type="text" placeholder="Enter Day6 Itenerary" >
+          </div>
+          <div class="input-box">
+            <span class="details">Detailed Itinerary Day 1 Heading</span>
+            <input name="d1" type="text" placeholder="Enter Detailed Itinerary Day 1 Heading" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Detailed Itinerary Day 1 description</span>
+            <input name="des1" type="text" placeholder="Enter Detailed Itinerary Day 1 description" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Detailed Itinerary Day 2 Heading</span>
+            <input name="d2" type="text" placeholder="Enter Detailed Itinerary Day 2 Heading" >
+          </div>
+          <div class="input-box">
+            <span class="details">Detailed Itinerary Day 2 description</span>
+            <input name="des2" type="text" placeholder="Enter Detailed Itinerary Day 2 description" >
+          </div>
+          <div class="input-box">
+            <span class="details">Detailed Itinerary Day 3 Heading</span>
+            <input name="d3" type="text" placeholder="Enter Detailed Itinerary Day 3 Heading" >
+          </div>
+          <div class="input-box">
+            <span class="details">Detailed Itinerary Day 3 description</span>
+            <input name="des3" type="text" placeholder="Enter Detailed Itinerary Day 3 description" >
+          </div>
+          <div class="input-box">
+            <span class="details">Detailed Itinerary Day 4 Heading</span>
+            <input name="d4" type="text" placeholder="Enter Detailed Itinerary Day 4 Heading" >
+          </div>
+          <div class="input-box">
+            <span class="details">Detailed Itinerary Day 4 description</span>
+            <input name="des4" type="text" placeholder="Enter Detailed Itinerary Day 4 description" >
+          </div>
+          <div class="input-box">
+            <span class="details">Inclusion1</span>
+            <input name="inclusion1" type="text" placeholder="Enter Inclusion1" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Inclusion2</span>
+            <input name="inclusion2" type="text" placeholder="Enter Inclusion2" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Inclusion3</span>
+            <input name="inclusion3" type="text" placeholder="Enter Inclusion3" >
+          </div>
+          <div class="input-box">
+            <span class="details">Inclusion4</span>
+            <input name="inclusion4" type="text" placeholder="EnterInclusion4" >
+          </div>
+          <div class="input-box">
+            <span class="details">Inclusion5</span>
+            <input name="inclusion5" type="text" placeholder="Enter Inclusion5" >
+          </div>
+
+
+
+
+          <div class="input-box">
+            <span class="details">Inclusion6</span>
+            <input name="inclusion6" type="text" placeholder="Enter Inclusion6" >
+          </div>
+          <div class="input-box">
+            <span class="details">Inclusion7</span>
+            <input name="inclusion7" type="text" placeholder="Enter Inclusion7" >
+          </div>
+
+          <div class="input-box">
+            <span class="details">Exclusion1</span>
+            <input name="exclusion1" type="text" placeholder="Enter Exclusion1" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Exclusion2</span>
+            <input name="exclusion2" type="text" placeholder="Enter Exclusion2" >
+          </div>
+          <div class="input-box">
+            <span class="details">Exclusion3</span>
+            <input name="exclusion3" type="text" placeholder="Enter Exclusion3" >
+          </div>
+          <div class="input-box">
+            <span class="details">Exclusion4</span>
+            <input name="exclusion4" type="text" placeholder="Enter Exclusion4" >
+          </div>
+          <div class="input-box">
+            <span class="details">Exclusion5</span>
+            <input name="exclusion5" type="text" placeholder="Enter Exclusion5" >
+          </div>
+
+          <div class="input-box">
+            <span class="details">Things to Carry</span>
+            <input name="toc1" type="text" placeholder="Enter Things to Carry" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Things to Carry</span>
+            <input name="toc2" type="text" placeholder="Enter Things to Carry" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Things to Carry</span>
+            <input name="toc3" type="text" placeholder="Enter Things to Carry" >
+          </div>
+          <div class="input-box">
+            <span class="details">Things to Carry</span>
+            <input name="toc4" type="text" placeholder="Enter Things to Carry" >
+          </div>
+          <div class="input-box">
+            <span class="details">Things to Carry</span>
+            <input name="toc5" type="text" placeholder="Enter Things to Carry" >
+          </div>
+
+
+
+
+          <div class="input-box">
+            <span class="details">Things to Carry</span>
+            <input name="toc6" type="text" placeholder="Enter Things to Carry" >
+          </div>
+          <div class="input-box">
+            <span class="details">Things to Carry</span>
+            <input name="toc7" type="text" placeholder="Enter Things to Carry" >
+          </div>
+
+          <div class="input-box">
+            <span class="details">Image name with ext.</span>
+            <input name="imagename1" type="text" placeholder="example.png" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Image name with ext.</span>
+            <input name="imagename2" type="text" placeholder="example.png" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Image name with ext.</span>
+            <input name="imagename3" type="text" placeholder="example.png" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Image name with ext.</span>
+            <input name="imagename4" type="text" placeholder="example.png" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Image name with ext.</span>
+            <input name="imagename5" type="text" placeholder="example.png" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Cutted price</span>
+            <input name="cutprice" type="text" placeholder="Normal price" required>
+          </div>
+
+
+
+
+        <div class="input-box">
+          <span class="details">Whatsapp link for Contact</span>
+          <input name="whatsapp" type="text" placeholder="whatsapplink" required>
+        </div>
+
+        <div class="select1">
+          <label  for="locate">Choose a location:</label>
+        <select name="locate" required>
+          <option value="jammu">Jammu</option>
+          <option value="himachal">Himachal</option>
+          <option value="uttrakhand">Uttrakhand</option>
+        </select>
+        </div>
+        </div>
+
+<br>
+        <div class="button">
+          <input type="submit" value="Post">
+        </div>
+
+      </form>
+    </div>
+  </div>
+</div>
+<%- include("footer") -%>

@@ -1,0 +1,39 @@
+<%- include("header") -%>
+
+
+<section id="trips" class="main-content">
+  <div class="container">
+
+    <div class="row">
+
+
+
+<%  listItems.forEach((item) => { %>
+      <div name="<%=item.tripname%>" class="col-sm-4">
+         <div class="place-card">
+           <div class="place-card__img">
+             <a href="/trip/<%= item.checkname %>" >
+             <img src="/uploads/<%=item.image1%>" class="place-card__img-thumbnail" alt="Thumbnail">
+            </a>
+           </div>
+           <div class="place-card__content">
+             <h5 class="place-card__content_header"><a href="/trip/<%= item.checkname %>" class="text-dark"><%= item.tripname %></a> <a href="/trip/<%= item.checkname %>" class="text-decoration-none" ><i class="fa fa-heart-o"></i></a></h5>
+
+             <div class="flex-center">
+               <p class="mb-0"><i  class="fa-solid fa-location-dot"></i> <span class="text-muted" ><%= item.location %></span></p>
+               <div class="rating-box">
+                 <div class="rating-stars">
+                   <img src="/css/grey-star.svg" alt="">
+                   <div class="filled-star" style="width:86%"></div>
+                 </div>
+               </div>
+             </div>
+           </div>
+         </div>
+       </div>
+<%  }); %>
+
+    </div>
+  </div>
+</section>
+<%- include("footer") -%>

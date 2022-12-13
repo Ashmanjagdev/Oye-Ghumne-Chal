@@ -1,0 +1,49 @@
+  <%- include("header") -%>
+  <div class="cta-area-l-14" style="padding:0;width:100%;">
+       <div class="container position-relative" style="padding:0;width:90%;">
+         <div class="bg-shape-img-3"></div>
+         <div class="row cta-area-l-14-content justify-content-center text-lg-start text-center">
+           <div class="col-lg-6">
+             <div class="cta-content">
+               <h2 class="text-white">Check Out the Latest Trekks </h2>
+             </div>
+           </div>
+           <div class="col-lg-3 text-lg-end text-center">
+             <a class="btn" href="#trips">book Your Trip</a>
+           </div>
+         </div>
+       </div>
+     </div>
+
+ <section id="trips" class="main-content">
+ 		<div class="container">
+
+ 			<div class="row">
+
+
+        <div name="<%= tripname %>" style="display:none<%= tripname %>;" class="col-sm-4">
+           <div class="place-card">
+             <div class="place-card__img">
+               <img src="./uploads/<%=image1%>" class="place-card__img-thumbnail" alt="Thumbnail">
+             </div>
+             <div class="place-card__content">
+               <h5 class="place-card__content_header"><a href="/product/<%= checkname %>" class="text-dark"><%= tripname %></a> <a href="#!">okay</a></h5>
+
+               <div class="flex-center">
+                 <p class="mb-0"><i class="fa-solid fa-location-dot"></i> <span class="text-muted"><%= location %></span></p>
+                 <div class="rating-box">
+                   <div class="rating-stars">
+                     <img src="css/grey-star.svg" alt="">
+                     <div class="filled-star" style="width:86%"></div>
+                   </div>
+                 </div>
+               </div>
+             </div>
+           </div>
+         </div>
+
+
+ 			</div>
+ 		</div>
+ 	</section>
+  <%- include("footer") -%>

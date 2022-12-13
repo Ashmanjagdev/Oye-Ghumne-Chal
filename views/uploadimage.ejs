@@ -1,0 +1,30 @@
+<%- include("header") -%>
+<div class="signform" >
+<div class=" cont" style="height:500px;">
+    <div class="title">Post images for trips</div>
+    <div class=" Sell-items content">
+      <form action="/uploadimage" enctype="multipart/form-data" method="post">
+        <div class="user-details">
+
+        </div>
+        <div class="input-box">
+          <span class="details">Upload Image</span>
+                    <input type="file" id="image"
+                           name="file" value="" multiple required>
+        </div>
+
+<br>
+        <div class="button">
+          <input type="submit" value="Post Image">
+        </div>
+        <div class="title">
+          <a href="/admin/fill-theyashhanda">
+          Post Trip Details
+          </a>
+        </div>
+      </form>
+
+    </div>
+  </div>
+</div>
+<%- include("footer") -%>

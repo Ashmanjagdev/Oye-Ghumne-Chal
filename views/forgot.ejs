@@ -1,0 +1,27 @@
+<%- include("header") -%>
+<div class="signform">
+<div class="cont log">
+    <div class="title">Answer the Security Question</div>
+    <br>
+    <div class="content">
+      <form action="/forgotpassword" method="post">
+        <div class="user-detail">
+          <div class="input-box">
+            <span class="details" style="color:red;"><b><%= message %></b></span>
+            <span class="details">Email</span>
+            <input name="username" type="text" placeholder="Enter your email" required>
+          </div>
+          <div class="input-box">
+            <span class="details">What is your first pet name?</span>
+            <input name="security" type="text" placeholder="Enter the answer for security question" required>
+          </div>
+        </div>
+        <div class="button">
+          <input type="submit" value="Check Out">
+        </div>
+      </form>
+
+    </div>
+  </div>
+</div>
+  <%- include("footer") -%>

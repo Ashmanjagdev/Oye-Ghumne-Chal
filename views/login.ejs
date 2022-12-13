@@ -1,0 +1,34 @@
+<%- include("header") -%>
+<div class="signform">
+<div class="cont log">
+    <div class="title">Log In </div>
+    <br>
+    <div class="content">
+      <form action="/signin" method="post">
+        <div class="user-detail">
+          <span class="details" style="color:red;"><b><%= message %></b></span>
+          <div class="input-box">
+            <span class="details">Email</span>
+            <input name="username" type="text" placeholder="Enter your email" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Password</span>
+            <input name="password" type="password" placeholder="Enter your password" required>
+          </div>
+        </div>
+        <div class="button">
+          <input type="submit" value="Log In">
+        </div>
+        <div >
+          <a class="createacc" href="/signup"><b>Create Account</b></a>
+        </div>
+        <br>
+        <div >
+          <a class="createacc" href="/forgotpassword"><b>Forgot Password</b></a>
+        </div>
+      </form>
+
+    </div>
+  </div>
+</div>
+  <%- include("footer") -%>

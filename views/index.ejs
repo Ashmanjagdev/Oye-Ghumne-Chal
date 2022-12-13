@@ -1,0 +1,497 @@
+  <%- include("header") -%>
+  <br>
+  <br>
+  <br>
+  <div id="web-1" class="content-area-l-14-1 position-relative">
+      <div class="container slide">
+        <div class="row align-items-center justify-content-center">
+          <div class="col-xl-4 col-lg-6 col-md-8 col-sm-10 order-lg-1 order-1" data-aos="fade-right" data-aos-duration="1200" data-aos-once="true">
+            <div class="h-100 section-heading-8 content text-lg-start text-center">
+              <h2>Oye! Ghumne Chal</h2>
+              <div class="class-12">
+              <p>Travel is an investment in your self.</p>
+              </div>
+              <a href="/trips" class="btn focus-reset ">
+                <div class="class-13"><span class="class-14">Get Started Now</span></div>
+              </a>
+            </div>
+          </div>
+          <div class="offset-xl-2 col-xl-6 col-lg-6 col-md-8 pl-xl-11 order-lg-1 order-0" data-aos="fade-left" data-aos-duration="1200" data-aos-once="true">
+            <div class="content-img">
+              <img src="/css/Home page.png"  alt="" class=" w-xl-auto image123">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
+  <br>
+  <br>
+  <br>
+  <br>
+  <div id="trekks" class="row" id="head" >
+    <div class="col-lg-12 box head deals" data-aos="fade-up" data-aos-offset="100">
+      <h1>Our Best Trekks</h1>
+    </div>
+    <div class="col-lg-12 box head deals" data-aos="fade-up" data-aos-offset="100">
+
+
+      <p>Plan trekks with your friends and family on best prices.</p>
+    </div>
+  </div>
+  <br>
+  <br>
+  <br>
+
+  <section id="testimonial_area" class="section_padding" style="padding:0!important;">
+    <div class="container"  >
+      <div class="row" >
+        <div class="col-md-12">
+          <div class="testmonial_slider_area text-center owl-carousel">
+
+           <%  listItems.forEach((item) => { %>
+            <div name="<%= item.tripname %>"  class="card" >
+              <a href="/trip/<%= item.checkname %>">
+              <img style="height:33vh;border-top-left-radius:10px;border-top-right-radius:10px;" src="./uploads/<%=item.image1%>" class="card-img-top" alt="...">
+</a>
+                <div class="place-card__content">
+     							<h5 class="place-card__content_header"><a href="/trip/<%= item.checkname %>" class="text-dark"><%= item.tripname %></a> <a href="/trip/<%= item.checkname %>"><i class="fa fa-heart-o"></i></a></h5>
+     							<div class="flex-center">
+     								<p class="mb-0"><i class="fa-solid fa-location-dot"></i> <span class="text-muted"><%= item.location %></span></p>
+     								<div class="rating-box">
+     									<div class="rating-stars" >
+     										<img src="css/grey-star.svg" style="height:66%;" alt="">
+     										<div class="filled-star" style="width:86%;"></div>
+     									</div>
+     								</div>
+     							</div>
+     						</div>
+            </div>
+            <%  }); %>
+
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+
+  <div  class="row backimage" >
+    <div class="col-lg-12 box head deals" data-aos="fade-right" data-aos-offset="105">
+      <h1 class="headd">We Provide The Best Tours</h1>
+      <a href="/trips"><button type="button" class="btn btn-warning1"><b>Find Your Tour</b></button>
+</a>
+    </div>
+  </div>
+
+
+  <img class="image" src="css/1234.png" alt="image">
+
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<div id="tours" class="row" id="head" >
+  <div class="col-lg-12 box head deals" data-aos="fade-up" data-aos-offset="100">
+    <h1>Our Best Tours</h1>
+  </div>
+  <div class="col-lg-12 box head deals" data-aos="fade-up" data-aos-offset="100">
+
+
+    <p>Check out the best trips and plan with your friends and family.</p>
+  </div>
+</div>
+<br>
+<br>
+<br>
+
+<section id="testimonial_area" class="section_padding" style="padding:0!important;">
+  <div class="container" >
+    <div class="row" >
+      <div class="col-md-12">
+        <div class="testmonial_slider_area text-center owl-carousel">
+
+          <%  listItems2.forEach((item) => { %>
+           <div name="<%= item.tripname %>"  class="card" >
+             <a href="/trip/<%= item.checkname %>">
+             <img style="height:33vh;border-top-left-radius:10px;border-top-right-radius:10px;" src="./uploads/<%=item.image1%>" class="card-img-top" alt="...">
+</a>
+               <div class="place-card__content">
+                 <h5 class="place-card__content_header"><a href="/trip/<%= item.checkname %>" class="text-dark"><%= item.tripname %></a> <a href="/trip/<%= item.checkname %>"><i class="fa fa-heart-o"></i></a></h5>
+                 <div class="flex-center">
+                   <p class="mb-0"><i class="fa-solid fa-location-dot"></i> <span class="text-muted"><%= item.location %></span></p>
+                   <div class="rating-box">
+                     <div class="rating-stars" >
+                       <img src="css/grey-star.svg" style="height:66%;" alt="">
+                       <div class="filled-star" style="width:86%;"></div>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+           </div>
+           <%  }); %>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+
+
+
+
+
+
+
+
+<br>
+
+<section class="white-section" id="features" style="background-color:#f6f6f6;">
+
+  <div class="container-fluid">
+
+    <div class="row">
+      <div class="feature-box col-lg-4" >
+        <i style="color:orange;" class="icon fas fa-check-circle fa-4x"></i>
+        <h3 class="feature-title">Customer satisfaction</h3>
+        <p>Four star plus reviews in all Trips.</p>
+      </div>
+
+      <div class="feature-box col-lg-4">
+        <i style="color:Green;" class="icon fas fa-bullseye fa-4x"></i>
+        <h3 class="feature-title">Safe Travel</h3>
+        <p>All precautions are taken care of.</p>
+      </div>
+
+      <div class="feature-box col-lg-4">
+        <i style="color:red;" class="icon fas fa-heart fa-4x"></i>
+        <h3 class="feature-title">Trustworthy</h3>
+        <p>Friendly and Experienced travel team.</p>
+      </div>
+    </div>
+
+
+  </div>
+</section>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<div id="contact2" class="content">
+
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-10">
+
+
+          <div class="row justify-content-center">
+            <div class="col-md-6">
+
+              <h3 class="heading mb-4">Any Questions? Message Now</h3>
+              <p>Get in touch with us if you have any querry regarding trekks,trips or in booking</p>
+
+              <p><img src="css/question.png" alt="Image" class="img-fluid"></p>
+
+
+            </div>
+            <div class="col-md-6">
+
+              <form action="/messages" enctype="multipart/form-data" class="mb-5" method="post" id="contactForm" name="contactForm">
+                <div class="row">
+                  <div class="col-md-12 form-group">
+                    <input type="text" class="form-control" name="name" id="name" placeholder="Your name">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12 form-group">
+                    <input type="text" class="form-control" name="email" id="email" placeholder="Email">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12 form-group">
+                    <input type="text" class="form-control" name="number" id="subject" placeholder="Phone number">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12 form-group">
+                    <textarea class="form-control" name="message" id="message" cols="30" rows="7" placeholder="Write your message"></textarea>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-12">
+                    <input type="submit" value="Send Message" class="btn btn-primary rounded-0 py-2 px-4">
+                  <span class="submitting"></span>
+                  </div>
+                </div>
+              </form>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+
+  <section id="testimonial_area" class="section_padding" style="padding:0!important; background-color: #eef4f7!important;">
+    <br>
+    <br>
+    <div class="row" id="review-system" >
+      <div class="col-lg-12 box head deals" data-aos="fade-up" data-aos-offset="100"><h1>Reviews</h1></div>
+    </div>
+    <div class="intro">
+        <p class="text-center">Our customers love us! Read what they have said below.</p>
+    </div>
+    <div class="container" >
+      <div class="row" >
+        <div class="col-md-12">
+          <div class="testmonial_slider_area text-center owl-carousel">
+
+             <%  reviews.forEach((item) => { %>
+            <div  class="card" style="box-shadow:none;border:none;">
+              <div id="review" class="testimonials-clean" style="background-color: #eef4f7!important;">
+                      <div class="container test" >
+                          <div class="row people" >
+                              <div class=" col-lg-12 item" >
+                                  <div class="box" style="height: 170px;">
+                                      <p class="description"><%= item.review %></p>
+                                  </div>
+                                  <div class="author" ><img class="rounded-circle" style="width:46px;height:46px;" src="/css/<%= item.image %>">
+                                      <h5 class="name1 name3"><%= item.name %></h5>
+                                  </div>
+                              </div>
+                              </div>
+                              </div>
+                              </div>
+            </div>
+            <%  }); %>
+
+            <div  class="card" style="box-shadow:none;border:none;">
+              <div id="review" class="testimonials-clean" style="background-color: #eef4f7!important;">
+                      <div class="container test" >
+                          <div class="row people" >
+                              <div class=" col-lg-12 item" >
+                                  <div class="box">
+                                      <p class="description">The communication, travel and stay arrangements and most importantly trek guides were very professional and best we could ask for. Looking forward to more trek with Tripsaa.</p>
+                                  </div>
+                                  <div class="author" ><img class="rounded-circle" style="width:66px!important;height:40px;" src="css/p3.png">
+                                      <h5 class="name1 name3" >Ashman Jagdev</h5>
+                                  </div>
+                              </div>
+                              </div>
+                              </div>
+                              </div>
+            </div>
+
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <br>
+
+  </section>
+  <br>
+  <br>
+  <br>
+
+  <div id="contact3" class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-10">
+
+
+        <div class="row justify-content-center">
+          <div  class="col-md-6 contactpage">
+
+            <h3 class="heading mb-4">Contact Us</h3>
+            <p></p>
+       <div class="box13">
+
+            <div class="new123">
+              <img class="icons1" src="/css/ph2.png" alt="call">
+            </div>
+            <div class="box12">
+            <h5>Call</h5>
+            <p>9646459101</p>
+            </div>
+       </div>
+       <div class="box16">
+
+            <div class="new123">
+              <img class="icons1" src="/css/email2.png" alt="call">
+            </div>
+            <div class="box14">
+            <h5>Email</h5>
+            <p>oyeghumnechal@gmail.com</p>
+            </div>
+       </div>
+       <div class="box15">
+
+            <div class="new123">
+              <img class="icons1" src="/css/adrs2.png" alt="call">
+            </div>
+            <div class="box12">
+            <h5>Address</h5>
+            <p>Dera baba nanak,Gurdaspur</p>
+            </div>
+       </div>
+       <br>
+
+          </div>
+          <div class="col-md-6 reviewpage">
+
+            <form action="/reviews" enctype="multipart/form-data" class="mb-5" method="post" id="contactForm" name="contactForm">
+              <h3 class="heading mb-4">Post your Review</h3>
+              <p>Share your trip experience with Oye Ghumne Chal or any other suggestions.</p>
+
+              <div class="row">
+                <div class="col-md-12 form-group">
+                  <textarea style="height:70px;" class="form-control" name="review" id="message" cols="30" rows="7" placeholder="Write your review"></textarea>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12" >
+                  <input style="background-color:orange;border:none;" type="submit" value="Post Review" class="btn btn-primary rounded-0 py-2 px-4">
+                <span class="submitting"></span>
+                </div>
+              </div>
+            </form>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
+  <script>
+      $(".testmonial_slider_area").owlCarousel({
+      autoplay: true,
+      slideSpeed:1000,
+      items : 3,
+      loop: true,
+      nav:true,
+      navText:['<i class="fa fa-arrow-left"></i>','<i class="fa fa-arrow-right"></i>'],
+      margin: 0,
+      dots: true,
+      responsive:{
+        320:{
+          items:1
+        },
+        767:{
+          items:2
+        },
+        600:{
+          items:2
+        },
+        1000:{
+          items:3
+        }
+      }
+
+    });
+  </script>
+
+
+<!--
+<div id="review" class="testimonials-clean" style="background-color: #eef4f7!important;">
+  <br>
+  <br>
+  <div class="row" >
+    <div class="col-lg-12 box head deals" data-aos="fade-up" data-aos-offset="100"><h1>Reviews</h1></div>
+  </div>
+  <br>
+        <div class="container test">
+            <div class="intro">
+                <p class="text-center">Our customers love us! Read what they have said below.</p>
+            </div>
+            <div class="row people">
+                <div class="col-md-6 col-lg-4 item">
+                    <div class="box">
+                        <p class="description">The communication, travel and stay arrangements and most importantly trek guides were very professional and best we could ask for. Looking forward to more trek with Tripsaa.</p>
+                    </div>
+                    <div class="author"><img class="rounded-circle" src="css/p1.png">
+                        <h5 class="name1">Ashman Jagdev</h5>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 item">
+                    <div class="box">
+                        <p class="description">This being the first trek with Oye Ghumne Chal, I am glad to share that it has been one of my best experience ever. The warmth and the care from the entire team had helped all the days on the trek to be wholesome. </p>
+                    </div>
+                    <div class="author"><img class="rounded-circle" src="css/p2.png">
+                        <h5 class="name1">Gaurav</h5>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 item">
+                    <div class="box">
+                        <p class="description">It was AWESOME. I really didn't expect it to be this well organized. From equipment, staying locations and food - everything came together to make it a memory to cherish lifelong.</p>
+                    </div>
+                    <div class="author"><img class="rounded-circle" src="css/p3.jpg">
+                        <h5 class="name1">Ritika aggarwal</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    -->
+
+    <script>
+// Get the button
+let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+<%- include("footer") -%>
