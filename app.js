@@ -805,7 +805,7 @@ app.get('/trip/:head',function(req,res){
 });
 app.post('/booknow',upload,function(req,res){
   if(req.isAuthenticated()){
-    res.redirect("/#contact");
+    res.redirect("/#contact2");
   }
   else{
     res.redirect("/Sign%20In");
