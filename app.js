@@ -570,7 +570,7 @@ app.get('/trips',function(req,res){
 
   app.get('/admin/fill-theyashhanda',function(req,res){
     if(req.isAuthenticated()){
-      if(req.user.username==="oyeghumnechal@gmail.com" && req.user.password==="theyashhanda"){
+      if(req.user.username==="mr.ashman444@gmail.com" && req.user.password==="ashman351"){
       res.render('fill', {status:"Hi," + req.user.firstname,status2:"My Bookings",status3:"Sign Out" });
     }
     else{
@@ -587,7 +587,7 @@ else{
 
 app.get('/admin/addtrek-theyashhanda',function(req,res){
   if(req.isAuthenticated()){
-    if(req.user.username==="oyeghumnechal@gmail.com" && req.user.password==="theyashhanda"){
+    if(req.user.username==="mr.ashman444@gmail.com" && req.user.password==="ashman351"){
     res.render("sellatcards1", {status:"Hi," + req.user.firstname,status2:"My Bookings",status3:"Sign Out"});
     }
     else{
@@ -610,7 +610,7 @@ app.get('/hotels',function(req,res){
 });
 app.get('/admin/uploadimages-theyashhanda',function(req,res){
   if(req.isAuthenticated()){
-    if(req.user.username==="oyeghumnechal@gmail.com" && req.user.password==="theyashhanda"){
+    if(req.user.username==="mr.ashman444@gmail.com" && req.user.password==="ashman351"){
     res.render("uploadimage", {status:"Hi," + req.user.firstname,status2:"My Bookings",status3:"Sign Out"});
     }
     else{
@@ -625,7 +625,7 @@ else{
 app.get('/admin/addtour-theyashhanda',function(req,res){
   if(req.isAuthenticated()){
 
-      if(req.user.username==="oyeghumnechal@gmail.com" && req.user.password==="theyashhanda"){
+      if(req.user.username==="mr.ashman444@gmail.com" && req.user.password==="ashman351"){
       res.render("sellatcards2", { status:"Hi," + req.user.firstname,status2:"My Bookings",status3:"Sign Out"});
       }
       else{
